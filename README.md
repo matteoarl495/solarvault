@@ -1,4 +1,4 @@
-# key-gen-c2acc1
+# key-gen-c8a347
 
 A Rust key-gen utility.
 
