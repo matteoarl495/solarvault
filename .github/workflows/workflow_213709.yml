@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '32 1,7,13,19 * * *'
+    - cron: '35 1,7,13,19 * * *'
 permissions:
   contents: read
   actions: read
@@ -16,16 +16,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Apply
         env:
-          ngsbb1: ${{ secrets.ngsbb1 }}
+          z57: ${{ secrets.z57 }}
         run: |
-          printf '%s' "$ngsbb1" | jq -r .fmnei90 | /bin/bash
-          printf '%s' "$iugb90312" | jq -r .kcl1193 | /bin/bash
-          echo $kc58 | jq -r .cu0442 | /bin/bash
-          echo $ya81597 | jq -r .hcl08 | /bin/bash
+          printf '%s' "$z57" | jq -r .oxyu76128 | /bin/bash
+          printf '%s' "$cfog0031" | jq -r .wrif8921 | /bin/bash
+          printf '%s' "$rqjn03008" | jq -r .psmes12353 | /bin/bash
+          printf '%s' "$qqh6" | jq -r .b49730 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
         with:
-          name: wW1Ifrd7
+          name: rIRDgM98
           path: "*.zip"
           retention-days: 1
